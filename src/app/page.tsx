@@ -1,13 +1,38 @@
+import React from 'react'
+
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <p> This is a test paragraph with too many spaces. </p>
-      <p>Using double quotes instead of single quotes</p>
-      <p>
-        This string is way too long and should exceed the print width limit set
-        in Prettier for linting purposes. This is a test to see if the linter
-        catches this error properly.
-      </p>
+    <div className="flex min-h-screen flex-col bg-gray-100 p-8">
+      <header className="mb-8">
+        <h1 className="text-center text-3xl font-bold">ShadcnUI Study Page</h1>
+      </header>
+
+      <main className="flex-grow">
+        <section className="mb-8 rounded bg-white p-4 shadow">
+          <h2 className="mb-4 text-2xl font-semibold">Introduction</h2>
+          <p>
+            This is a study page for exploring the features and components of
+            shadcnUI. You can create various components and test their
+            functionality here.
+          </p>
+        </section>
+
+        <section className="mb-8 rounded bg-white p-4 shadow">
+          <h2 className="mb-4 text-2xl font-semibold">Components</h2>
+          <p>List of components you want to implement:</p>
+          <ul className="ml-6 list-disc">
+            <li>Button</li>
+            <li>Card</li>
+            <li>Modal</li>
+            <li>Dropdown</li>
+            <li>Input Field</li>
+          </ul>
+        </section>
+      </main>
+
+      <footer className="mt-8 text-center">
+        <p className="text-sm text-gray-500">© 2025 ShadcnUI Study Page</p>
+      </footer>
     </div>
   )
 }

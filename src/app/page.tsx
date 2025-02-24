@@ -1,4 +1,5 @@
-import React from 'react'
+'use client';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -21,7 +22,7 @@ export default function Home() {
           <h2 className="mb-4 text-2xl font-semibold">Components</h2>
           <p>List of components you want to implement:</p>
           <ul className="ml-6 list-disc">
-            <li>Button</li>
+            <Link href={'/ButtonPage'}>Button</Link>
             <li>Card</li>
             <li>Modal</li>
             <li>Dropdown</li>
@@ -34,5 +35,5 @@ export default function Home() {
         <p className="text-sm text-gray-500">© 2025 ShadcnUI Study Page</p>
       </footer>
     </div>
-  )
+  );
 }

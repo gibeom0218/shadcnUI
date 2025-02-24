@@ -21,12 +21,22 @@ export default function Home() {
         <section className="mb-8 rounded bg-white p-4 shadow">
           <h2 className="mb-4 text-2xl font-semibold">Components</h2>
           <p>List of components you want to implement:</p>
-          <ul className="ml-6 list-disc">
-            <Link href={'/ButtonPage'}>Button</Link>
-            <li>Card</li>
-            <li>Modal</li>
-            <li>Dropdown</li>
-            <li>Input Field</li>
+          <ul className="ml-6 flex list-disc flex-col">
+            <Link href={'/ButtonPage'} className="text-blue-500 underline">
+              Go To Button Page
+            </Link>
+            <Link href={'/ButtonPage'} className="text-blue-500 underline">
+              Go To Card Page
+            </Link>
+            <Link href={'/ButtonPage'} className="text-blue-500 underline">
+              Go To Modal Page
+            </Link>
+            <Link href={'/ButtonPage'} className="text-blue-500 underline">
+              Go To Dropdown Page
+            </Link>
+            <Link href={'/ButtonPage'} className="text-blue-500 underline">
+              Go To Input Field Page
+            </Link>
           </ul>
         </section>
       </main>

@@ -1,36 +1,27 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ShadCN UI 학습 레포지토리
 
-## Getting Started
+## 📚 소개
+ShadCN UI는 **Next.js**와 **Tailwind CSS**를 기반으로 하는 현대적인 UI 라이브러리입니다. 이 레포지토리는 ShadCN UI를 학습하고 활용하기 위해 만들어졌습니다. 다양한 컴포넌트를 사용해 실제 프로젝트를 구현하며 UI 개발에 대한 이해를 높이는 것이 목표입니다.
 
-First, run the development server:
+## 🎯 목적
+이 레포지토리를 통해 다음을 달성하고자 합니다:
+- ShadCN UI의 주요 컴포넌트와 기능을 이해하기
+- 실제 프로젝트를 통해 UI 구현 능력 향상
+- Next.js 및 Tailwind CSS와의 통합 방법 익히기
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🔍 구현할 내용
+이 레포지토리에서는 다음과 같은 주요 컴포넌트를 구현할 예정입니다:
+- **버튼(Button)**: 다양한 스타일의 버튼을 생성하고, 클릭 이벤트 처리.
+- **모달(Modal)**: 사용자 인터랙션을 위한 모달 창 구현.
+- **폼(Form)**: 입력 필드, 체크박스, 라디오 버튼 등 다양한 폼 요소를 포함한 폼 구현.
+- **카드(Card)**: 콘텐츠를 표시할 수 있는 카드 컴포넌트 제작.
+- **네비게이션(Navigation)**: 사이트 내비게이션을 위한 메뉴 바 및 드롭다운 구현.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📖 참고 자료
+- [ShadCN UI 공식 사이트](https://shadcn.dev)
+- [Next.js Documentation](https://nextjs.org/docs)
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📧 연락처
+- GitHub: [gibeom0218](https://github.com/gibeom0218)
+- 이메일: gb3187@naver.com

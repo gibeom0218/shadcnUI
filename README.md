@@ -18,9 +18,7 @@ ShadCN UI는 **Next.js**와 **Tailwind CSS**를 기반으로 하는 현대적인
 - **네비게이션(Navigation)**: 사이트 내비게이션을 위한 메뉴 바 및 드롭다운 구현.
 
 ## 📖 참고 자료
-- [ShadCN UI 공식 사이트](https://shadcn.dev)
-- [Next.js Documentation](https://nextjs.org/docs)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+- [ShadCN UI 공식 사이트](https://ui.shadcn.com/)
 
 ## 📧 연락처
 - GitHub: [gibeom0218](https://github.com/gibeom0218)

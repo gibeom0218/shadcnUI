@@ -25,8 +25,8 @@ export default function Home() {
             <Link href={'/ButtonPage'} className="text-blue-500 underline">
               Go To Button Page
             </Link>
-            <Link href={'/ButtonPage'} className="text-blue-500 underline">
-              Go To Card Page
+            <Link href={'/DialogPage'} className="text-blue-500 underline">
+              Go To Dialog Page
             </Link>
             <Link href={'/ButtonPage'} className="text-blue-500 underline">
               Go To Modal Page

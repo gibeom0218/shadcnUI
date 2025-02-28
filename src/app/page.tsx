@@ -28,8 +28,8 @@ export default function Home() {
             <Link href={'/DialogPage'} className="text-blue-500 underline">
               Go To Dialog Page
             </Link>
-            <Link href={'/ButtonPage'} className="text-blue-500 underline">
-              Go To Modal Page
+            <Link href={'/AccordionPage'} className="text-blue-500 underline">
+              Go To Accordion Page
             </Link>
             <Link href={'/ButtonPage'} className="text-blue-500 underline">
               Go To Dropdown Page

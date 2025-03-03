@@ -7,7 +7,7 @@ import {
 
 const SingleAccordion = () => {
   return (
-    <div className="w-full max-w-lg rounded-lg border p-6 shadow-md">
+    <div className="w-full rounded-lg border p-6 shadow-md">
       <h2 className="mb-4 text-xl font-semibold">Single Type Accordion</h2>
       <Accordion type="single" collapsible>
         <AccordionItem value="item-1">
@@ -29,7 +29,7 @@ const SingleAccordion = () => {
 
 const MultipleAccordion = () => {
   return (
-    <div className="w-full max-w-lg rounded-lg border p-6 shadow-md">
+    <div className="w-full rounded-lg border p-6 shadow-md">
       <h2 className="mb-4 text-xl font-semibold">Multiple Type Accordion</h2>
       <Accordion type="multiple">
         <AccordionItem value="item-1">
@@ -53,7 +53,7 @@ const AccordionPage = () => {
   return (
     <div className="min-h-screen bg-gray-100 p-10">
       <h1 className="mb-6 text-center text-3xl font-bold">Accordion Example</h1>
-      <div className="grid gap-6 md:grid-cols-2">
+      <div className="grid grid-cols-2 gap-6">
         <SingleAccordion />
         <MultipleAccordion />
       </div>

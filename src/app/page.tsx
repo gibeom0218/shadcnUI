@@ -31,8 +31,8 @@ export default function Home() {
             <Link href={'/AccordionPage'} className="text-blue-500 underline">
               Go To Accordion Page
             </Link>
-            <Link href={'/ButtonPage'} className="text-blue-500 underline">
-              Go To Dropdown Page
+            <Link href={'/CardPage'} className="text-blue-500 underline">
+              Go To Card Page
             </Link>
             <Link href={'/ButtonPage'} className="text-blue-500 underline">
               Go To Input Field Page

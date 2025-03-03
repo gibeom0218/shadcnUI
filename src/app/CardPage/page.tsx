@@ -59,8 +59,8 @@ const MemberCard = ({
   phoneNumber,
 }: (typeof EX_MEMBERS)[0]) => {
   return (
-    <Card className="w-full rounded-xl border bg-white p-4 shadow-lg transition-all hover:shadow-xl">
-      <CardHeader className="flex flex-col items-center space-y-2 text-center">
+    <Card>
+      <CardHeader>
         <div className="relative h-20 w-20">
           <Image
             src={profileImage}
@@ -74,9 +74,7 @@ const MemberCard = ({
           {description}
         </CardDescription>
       </CardHeader>
-      <CardFooter className="flex justify-center text-sm text-gray-500">
-        📞 {phoneNumber}
-      </CardFooter>
+      <CardFooter>📞 {phoneNumber}</CardFooter>
     </Card>
   );
 };
@@ -85,7 +83,7 @@ const CardPage = () => {
   return (
     <div className="min-h-screen bg-gray-100 py-10">
       <h1 className="mb-8 text-center text-3xl font-bold">팀원 소개</h1>
-      <div className="grid grid-cols-1 gap-6 px-6 sm:grid-cols-2 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-6 px-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {EX_MEMBERS.map((member, index) => (
           <MemberCard key={index} {...member} />
         ))}

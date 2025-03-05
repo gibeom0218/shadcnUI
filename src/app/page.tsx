@@ -34,8 +34,8 @@ export default function Home() {
             <Link href={'/CardPage'} className="text-blue-500 underline">
               Go To Card Page
             </Link>
-            <Link href={'/ButtonPage'} className="text-blue-500 underline">
-              Go To Input Field Page
+            <Link href={'/CalendarPage'} className="text-blue-500 underline">
+              Go To Calendar Page
             </Link>
           </ul>
         </section>

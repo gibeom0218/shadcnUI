@@ -15,7 +15,7 @@ import { Calendar } from '@/components/ui/calendar';
 import { DateRange } from 'react-day-picker';
 import { format } from 'date-fns';
 
-export const CalendarPage = () => {
+const CalendarPage = () => {
   const [selectedSingleDate, setSelectedSingleDate] = useState<
     Date | undefined
   >(undefined);

@@ -36,7 +36,7 @@ const CalendarPage = () => {
             <DialogDescription>원하는 날짜를 선택하세요.</DialogDescription>
           </DialogHeader>
 
-          {/* ✅ 단일 날짜 선택 캘린더 */}
+          {/* ✅ 단일 날짜 선택 캘린더*/}
           <Calendar
             mode="single"
             selected={selectedSingleDate}
@@ -66,7 +66,7 @@ const CalendarPage = () => {
             <DialogDescription>원하는 날짜를 선택하세요.</DialogDescription>
           </DialogHeader>
 
-          {/* ✅ 범위 날짜 선택 캘린더 */}
+          {/* ✅ 범위 날짜 선택 캘린더*/}
           <Calendar
             mode="range"
             selected={selectedRangeDate}

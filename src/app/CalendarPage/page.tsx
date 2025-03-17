@@ -23,12 +23,25 @@ const CalendarPage = () => {
     DateRange | undefined
   >(undefined);
 
+  const [isSingleDialogOpen, setIsSingleDialogOpen] = useState(false);
+  const [isRangeDialogOpen, setIsRangeDialogOpen] = useState(false);
+
+  const handleClickSelectSingle = () => {
+    setIsSingleDialogOpen(false);
+  };
+
+  const handleClickSelectRange = () => {
+    setIsRangeDialogOpen(false);
+  };
+
   return (
     <div className="flex h-screen items-center justify-center gap-8">
       {/* ✅ 단일 날짜 선택 모달 */}
-      <Dialog>
+      <Dialog open={isSingleDialogOpen} onOpenChange={setIsSingleDialogOpen}>
         <DialogTrigger asChild>
-          <Button variant="outline">단일 날짜 선택</Button>
+          <Button variant="outline" onClick={() => setIsSingleDialogOpen(true)}>
+            단일 날짜 선택
+          </Button>
         </DialogTrigger>
         <DialogContent className="max-w-sm p-4">
           <DialogHeader>
@@ -44,6 +57,10 @@ const CalendarPage = () => {
             className="rounded-md border p-2"
           />
 
+          <Button variant="default" onClick={handleClickSelectSingle}>
+            선택 완료
+          </Button>
+
           {/* ✅ 선택한 날짜를 Footer에 표시 */}
           <DialogFooter>
             <p className="text-sm text-muted-foreground">
@@ -56,7 +73,7 @@ const CalendarPage = () => {
       </Dialog>
 
       {/* ✅ 범위 날짜 선택 모달 */}
-      <Dialog>
+      <Dialog open={isRangeDialogOpen} onOpenChange={setIsRangeDialogOpen}>
         <DialogTrigger asChild>
           <Button variant="outline">범위 날짜 선택</Button>
         </DialogTrigger>
@@ -73,6 +90,10 @@ const CalendarPage = () => {
             onSelect={setSelectedRangeDate}
             className="rounded-md border p-2"
           />
+
+          <Button variant="default" onClick={handleClickSelectRange}>
+            선택 완료
+          </Button>
 
           {/* ✅ 선택한 날짜 범위를 Footer에 표시 */}
           <DialogFooter>

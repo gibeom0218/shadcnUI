@@ -37,6 +37,9 @@ export default function Home() {
             <Link href={'/CalendarPage'} className="text-blue-500 underline">
               Go To Calendar Page
             </Link>
+            <Link href={'/FormPage'} className="text-blue-500 underline">
+              Go To Form Page
+            </Link>
           </ul>
         </section>
       </main>

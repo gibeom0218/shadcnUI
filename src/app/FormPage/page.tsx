@@ -17,7 +17,11 @@ import {
 import { Input } from '@/components/ui/input';
 
 const formSchema = z.object({
-  username: z.string().min(2).max(50),
+  username: z
+    .string()
+    .min(2, '이름은 최소 2자 이상이어야 합니다.')
+    .max(50, '최대 50자까지 입력 가능합니다.'),
+  password: z.string().min(6, '비밀번호는 최소 6자 이상이어야 합니다.'),
 });
 
 const FormPage = () => {
@@ -25,11 +29,12 @@ const FormPage = () => {
     resolver: zodResolver(formSchema),
     defaultValues: {
       username: '',
+      password: '',
     },
   });
 
   const onSubmit = (values: z.infer<typeof formSchema>) => {
-    console.log(values);
+    alert(`이름 : ${values.username} \n비번 : ${values.password}`);
   };
 
   return (
@@ -43,11 +48,29 @@ const FormPage = () => {
               <FormItem>
                 <FormLabel>Username</FormLabel>
                 <FormControl>
-                  <Input placeholder="shadcn" {...field} />
+                  <Input placeholder="홍길동" {...field} />
                 </FormControl>
                 <FormDescription>
                   This is your public display name.
                 </FormDescription>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="password"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Password</FormLabel>
+                <FormControl>
+                  <Input
+                    type="password"
+                    placeholder="비밀번호 입력"
+                    {...field}
+                  />
+                </FormControl>
+                <FormDescription>6자 이상 입력하세요.</FormDescription>
                 <FormMessage />
               </FormItem>
             )}

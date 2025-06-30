@@ -5,4 +5,5 @@ export const pageLinks = [
   { name: 'Card', href: '/CardPage' },
   { name: 'Calendar', href: '/CalendarPage' },
   { name: 'Form', href: '/FormPage' },
+  { name: 'Carousel', href: '/CarouselPage' },
 ];

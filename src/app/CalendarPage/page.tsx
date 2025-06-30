@@ -1,11 +1,11 @@
-import CalendarType from '@/components/CalendarType';
+import CalendarType from '@/app/CalendarPage/_components/calendar-type';
 
 const CalendarPage = () => {
   return (
-    <div className="flex h-screen items-center justify-center gap-8">
+    <main className="flex-grow">
       <CalendarType calendarType="single" />
       <CalendarType calendarType="range" />
-    </div>
+    </main>
   );
 };
 

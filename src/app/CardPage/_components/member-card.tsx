@@ -30,7 +30,7 @@ export const MemberCard = ({
           {description}
         </CardDescription>
       </CardHeader>
-      <CardFooter>📞 {phoneNumber}</CardFooter>
+      <CardFooter className="px-6 pb-6">📞 {phoneNumber}</CardFooter>
     </Card>
   );
 };

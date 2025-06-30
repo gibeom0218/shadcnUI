@@ -1,39 +1,8 @@
-'use client';
-
-import { Button } from '@/components/ui/button';
-
-interface ButtonItemProps {
-  label: string;
-  variant?:
-    | 'default'
-    | 'destructive'
-    | 'outline'
-    | 'secondary'
-    | 'ghost'
-    | 'link';
-  className?: string;
-}
-
-const ButtonItem = ({
-  label,
-  variant = 'default',
-  className,
-}: ButtonItemProps) => {
-  const handleClick = () => alert(`${label} 버튼`);
-
-  return (
-    <div className="flex flex-col items-center gap-2">
-      <span className="text-sm font-semibold">{variant}</span>
-      <Button variant={variant} className={className} onClick={handleClick}>
-        {label}
-      </Button>
-    </div>
-  );
-};
+import { ButtonItem } from './_components/button-item';
 
 const ButtonPage = () => {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center bg-gray-100 p-8">
+    <main className="flex-grow">
       <h1 className="mb-6 text-2xl font-bold">Button Variants</h1>
 
       <div className="grid w-full max-w-md gap-4">
@@ -48,7 +17,7 @@ const ButtonPage = () => {
           className="border-2 border-blue-500 bg-blue-400 text-white hover:bg-blue-300"
         />
       </div>
-    </div>
+    </main>
   );
 };
 

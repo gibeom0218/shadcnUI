@@ -5,7 +5,7 @@ import { PageLinks } from './_components/page-links';
 
 export default function Home() {
   return (
-    <main className="flex-grow">
+    <main className="flex-grow p-8">
       <Header />
       <Introduction />
       <PageLinks />

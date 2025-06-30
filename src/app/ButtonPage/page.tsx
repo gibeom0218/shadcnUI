@@ -2,7 +2,7 @@ import { ButtonItem } from './_components/button-item';
 
 const ButtonPage = () => {
   return (
-    <main className="flex-grow">
+    <main className="flex flex-col items-center justify-center">
       <h1 className="mb-6 text-2xl font-bold">Button Variants</h1>
 
       <div className="grid w-full max-w-md gap-4">

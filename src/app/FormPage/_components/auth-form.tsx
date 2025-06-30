@@ -112,7 +112,7 @@ const AuthForm = () => {
               )}
             />
 
-            <CardFooter className="flex flex-col gap-3">
+            <CardFooter className="flex w-full flex-col gap-3">
               <Button type="submit" className="w-full">
                 회원가입
               </Button>

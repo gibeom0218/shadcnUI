@@ -1,11 +1,7 @@
-import AuthForm from '@/components/AuthForm';
+import AuthForm from '@/app/FormPage/_components/auth-form';
 
 const FormPage = () => {
-  return (
-    <div className="flex h-screen items-center justify-center p-10">
-      <AuthForm />
-    </div>
-  );
+  return <AuthForm />;
 };
 
 export default FormPage;

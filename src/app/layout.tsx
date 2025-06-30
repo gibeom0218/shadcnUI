@@ -1,3 +1,4 @@
+import { Footer } from './(HomePage)/_components/footer';
 import './globals.css';
 
 export default function RootLayout({
@@ -7,7 +8,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="flex min-h-screen flex-col bg-gray-100 p-8">
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

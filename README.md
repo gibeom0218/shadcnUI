@@ -12,6 +12,8 @@ ShadCN UI는 **Next.js**와 **Tailwind CSS**를 기반으로 하는 현대적인
 ## 🔍 구현할 내용
 이 레포지토리에서는 다음과 같은 주요 컴포넌트를 구현할 예정입니다:
 
+https://github.com/user-attachments/assets/cce66369-2902-4341-a9e8-61b2c633ff80
+
 | **컴포넌트** | **설명** | **스크린샷** |
 |-------------|---------|-------------|
 | **버튼 (Button)** | 다양한 스타일의 버튼 구현 | ![버튼 캡처](https://github.com/user-attachments/assets/74d6f66d-7644-4462-b252-ed026ab0d551) |
@@ -20,6 +22,8 @@ ShadCN UI는 **Next.js**와 **Tailwind CSS**를 기반으로 하는 현대적인
 | **달력 (Calendar)** | 날짜 선택이 가능한 달력 UI | ![달력 캡처](https://github.com/user-attachments/assets/736d5dee-970b-4b1c-aefe-be35b27103f8) |
 | **폼 (Form)** | 입력 필드, 체크박스, 라디오 버튼 등 다양한 폼 요소 포함 | ![폼 캡처](https://github.com/user-attachments/assets/b5eb2c93-8444-4c0d-b834-9c545ad07034) |
 | **카드 (Card)** | 콘텐츠를 표시할 수 있는 카드 컴포넌트 | ![카드 캡처](https://github.com/user-attachments/assets/2d355a3f-83ca-4959-9b17-b0bbd6271396) |
+| **케러셀 (Carousel)** | 여러 개의 카드나 이미지를 슬라이드 형식으로 보여주는 컴포넌트 | ![케러셀 캡처](https://github.com/user-attachments/assets/2d355a3f-83ca-4959-9b17-b0bbd6271396) |
+| **OTP (Input-Otp)** | 인증번호 입력을 위한 컴포넌트 | ![otp 캡처](https://github.com/user-attachments/assets/7f5f123c-1d7b-4de4-9bd4-497805f24e9a) |
 
 ## 📖 참고 자료
 - [ShadCN UI 공식 사이트](https://ui.shadcn.com/)
